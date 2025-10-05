@@ -1,0 +1,12 @@
+name: "Build Choco with Dongle"
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["choco_left", "choco_right", "choco_dongle", "settings_reset"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
+      branches: '["zmkfirmware/zmk/main"]'

@@ -1,0 +1,13 @@
+file_format: "1"
+id: choco
+name: Choco
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - choco_left
+  - choco_right
+  - choco_dongle

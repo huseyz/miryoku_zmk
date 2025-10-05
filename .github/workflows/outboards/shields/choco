@@ -1,0 +1,4 @@
+outboard_repository=huseyz/miryoku_zmk
+outboard_ref=master
+outboard_from=zmk-config/choco
+outboard_to=boards/shields/choco
