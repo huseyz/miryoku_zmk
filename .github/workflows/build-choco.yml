@@ -9,4 +9,4 @@ jobs:
       shield: '["choco_left", "choco_right", "choco_dongle", "settings_reset"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
-      branches: '["zmkfirmware/zmk/main"]'
+      custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
