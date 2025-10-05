@@ -1,0 +1,13 @@
+name: "Build Corne with Dongle"
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["corne_left", "corne_right", "corne_dongle", "settings_reset"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
+      branches: '["zmkfirmware/zmk/main"]'
