@@ -10,3 +10,4 @@ jobs:
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
+      kconfig: '[CONFIG_ZMK_SLEEP=y]'
