@@ -5,9 +5,10 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano"]'
-      shield: '["choco_left", "choco_right", "choco_dongle", "settings_reset"]'
+      board: '["nice_nano", "seeeduino_xiao_ble"]'
+      shield: '["choco_left", "choco_right", "choco_dongle prospector_adapter", "settings_reset"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
       kconfig: '["CONFIG_ZMK_SLEEP=y\\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
+      modules: '["carrefinho/prospector-zmk-module/main"]'
