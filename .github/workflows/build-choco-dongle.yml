@@ -1,13 +1,13 @@
-name: "Build Choco with Dongle"
+name: "Build Choco Prospector Dongle"
 on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano"]'
-      shield: '["choco_left", "choco_right", "settings_reset"]'
+      board: '["xiao_ble"]'
+      shield: '["choco_dongle prospector_adapter", "settings_reset"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
-      kconfig: '["CONFIG_ZMK_SLEEP=y\\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
+      modules: '["huseyz/prospector-zmk-module/main"]'
