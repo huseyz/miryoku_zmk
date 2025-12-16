@@ -10,4 +10,4 @@ jobs:
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
-      modules: '["huseyz/prospector-zmk-module/main"]'
+      modules: '["carrefinho/prospector-zmk-module/core/zephyr-4-1"]'
